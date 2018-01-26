@@ -1,23 +1,24 @@
-Highcharts.chart('container', {
+Highcharts.chart('jay-container', {
     chart: {
         type: 'bar'
     },
     title: {
-        text: 'Historic World Population by Region'
+        text: 'Preferred Front end development languages by Age'
     },
     subtitle: {
-        text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+        text: 'Source: Interview run by Jay Abey'
     },
     xAxis: {
-        categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+        categories: ['18-21', '22-25', '26-30', '30+'],
+        colors:['#000000', '#000000', '#ff0000', '#000000'],
         title: {
-            text: null
-        }
+            text: 'Age group'
+        },
     },
     yAxis: {
         min: 0,
         title: {
-            text: 'Population (millions)',
+            text: 'Number of Students',
             align: 'high'
         },
         labels: {
@@ -25,15 +26,16 @@ Highcharts.chart('container', {
         }
     },
     tooltip: {
-        valueSuffix: ' millions'
+        valueSuffix: ' '
     },
     plotOptions: {
         bar: {
             dataLabels: {
-                enabled: true
+                enabled: false
             }
         }
     },
+
     legend: {
         layout: 'vertical',
         align: 'right',
@@ -49,13 +51,20 @@ Highcharts.chart('container', {
         enabled: false
     },
     series: [{
-        name: 'Year 1800',
-        data: [107, 31, 635, 203, 2]
+        name: 'Number of students',
+        data: [2, 1, 4, 1],
+        color: 'rgb(0,0,255,1)'
     }, {
-        name: 'Year 1900',
-        data: [133, 156, 947, 408, 6]
+        name: 'CSS',
+        data: [1, 0, 0, 1],
+        color: 'rgba(255,128,0,0.3)'
     }, {
-        name: 'Year 2012',
-        data: [1052, 954, 4250, 740, 38]
+        name: 'Javascript',
+        data: [0, 1, 1, 0],
+        color: 'rgba(255,128,0,0.6)'
+    }, {
+        name: 'JQuery',
+        data: [1, 0, 3, 0],
+        color: 'rgba(255,128,0,1)'
     }]
 });
