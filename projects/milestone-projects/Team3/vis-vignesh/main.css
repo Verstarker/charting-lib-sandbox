@@ -1,0 +1,17 @@
+body{
+    margin:0 auto;
+    text-align: center;
+    background-color: rgba(129,218,238,0.2);
+
+}
+h1{
+    font-size:20px;
+font-family: 'Merriweather', serif;
+color:#B20707;
+}
+p{
+   width:100vw; 
+text-align:center;
+font-size:10px;
+font-family: 'Roboto', sans-serif;
+}
