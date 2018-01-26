@@ -5,7 +5,7 @@ Highcharts.chart('container-chart', {
         plotShadow: false
     },
     title: {
-        text: 'Which Area Of<br>Christchurch<br>Do You Live In?',
+        text: 'Which Areas Of<br>Christchurch<br>Do We Live In?<br>By Percentage',
         align: 'center',
         verticalAlign: 'middle',
         y: 40
